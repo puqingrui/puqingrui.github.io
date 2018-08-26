@@ -339,73 +339,14 @@
 
       
         
-          
-            <h2 id="CSS的引入方式"><a href="#CSS的引入方式" class="headerlink" title="CSS的引入方式"></a>CSS的引入方式</h2><p>css在html中有3种方式引用，分别是:<code>外部引用</code>、<code>内联样式</code>、<code>内部样式表</code>。  </p>
-<h3 id="外部引用-使用外部的CSS文件"><a href="#外部引用-使用外部的CSS文件" class="headerlink" title="外部引用-使用外部的CSS文件"></a>外部引用-使用外部的CSS文件</h3><p>  通过<code>&lt;link&gt;</code>标签引入外部的.css文件,格式如下：</p>
-<blockquote>
-<pre><code>&lt;head&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
-&lt;/head&gt;
-</code></pre></blockquote>
-<h3 id="内联样式-在html的-元素的内部使用css"><a href="#内联样式-在html的-元素的内部使用css" class="headerlink" title="内联样式-在html的`元素的内部使用css"></a>内联样式-在html的`元素的内部使用css</h3><p>  在要使用css的<code>标签内部</code>，通过<code>“style”</code>来定义css，格式如下：</p>
-<blockquote>
-<pre><code>&lt;p style=&quot;color:blue;margin-left:20px;&quot;&gt;This is a paragraph.&lt;/p&gt;
-</code></pre></blockquote>
-<h3 id="内部样式表-在html的头部区域定义css"><a href="#内部样式表-在html的头部区域定义css" class="headerlink" title="内部样式表-在html的头部区域定义css"></a>内部样式表-在html的头部区域定义css</h3><p>  通过<code>&lt;style&gt;</code>标签来实现，在<code>&lt;style&gt;区域</code>中写入css代码，格式如下：</p>
-<blockquote>
-<pre><code>&lt;head&gt;
-    &lt;style type=&quot;text/css&quot;&gt;
-        body {background-color:yellow;}
-        p {color:blue;}
-    &lt;/style&gt;
-&lt;/head&gt;
-</code></pre></blockquote>
-<h2 id="JS的引入方式"><a href="#JS的引入方式" class="headerlink" title="JS的引入方式"></a>JS的引入方式</h2><h3 id="html内部的javascript脚本"><a href="#html内部的javascript脚本" class="headerlink" title="html内部的javascript脚本"></a>html内部的javascript脚本</h3><p>js脚本可放置在html的<code>&lt;head&gt;</code>和<code>&lt;body&gt;</code>部分，通过<code>&lt;script&gt;</code>和标签使用：</p>
-<blockquote>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;body&gt;
-    .
-    .
-    &lt;script&gt;
-        document.write(&quot;&lt;h1&gt;这是一个标题&lt;/h1&gt;&quot;);
-        document.write(&quot;&lt;p&gt;这是一个段落&lt;/p&gt;&quot;);
-    &lt;/script&gt;
-    .
-    .
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre></blockquote>
-<p>上述例子的js语句会在页面加载时执行，当我们需要一个事件被触发时才调用js脚本，我们可以将js代码放入一个函数中：</p>
-<blockquote>
-<pre><code>&lt;!DOCTYPE html&gt;
- &lt;html&gt;
- &lt;head&gt;
-     &lt;script&gt;
-     function myFunction()
-     {
-         document.getElementById(&quot;demo&quot;).innerHTML=&quot;我的第一个 JavaScript 函数&quot;;
-     }
-     &lt;/script&gt;
- &lt;/head&gt;
- &lt;body&gt;
-     &lt;h1&gt;我的 Web 页面&lt;/h1&gt;
-     &lt;p id=&quot;demo&quot;&gt;一个段落&lt;/p&gt;
-     &lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;尝试一下&lt;/button&gt;
- &lt;/body&gt;
- &lt;/html&gt;
-</code></pre></blockquote>
-<h3 id="html外部的javascript脚本"><a href="#html外部的javascript脚本" class="headerlink" title="html外部的javascript脚本"></a>html外部的javascript脚本</h3><p>更多情况下，会把js脚本与html文件隔离开，单独写入.js文件。然后需要调用js函数时，通过外部文件的方式引入到html。此时，将<code>&lt;script&gt;标签</code>的<code>“src”属性</code>设置成该.js文件：</p>
-<blockquote>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;body&gt;
-    &lt;script src=&quot;myScript.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre></blockquote>
-
-          
+          <h2 id="CSS的引入方式"><a href="#CSS的引入方式" class="headerlink" title="CSS的引入方式"></a>CSS的引入方式</h2><p>css在html中有3种方式引用，分别是:<code>外部引用</code>、<code>内联样式</code>、<code>内部样式表</code>。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/26/web基础———CSS和JS在html中的引用方式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -522,18 +463,14 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/26/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
